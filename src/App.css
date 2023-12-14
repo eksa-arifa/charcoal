@@ -1,0 +1,519 @@
+/* button */
+.btn{
+  padding: 10px;
+  background: crimson;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.navbar.scrolled{
+  background: black;
+}
+
+.navbar .title a{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .title a img{
+  width: 60px;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar ul li{
+  list-style: none;
+}
+
+
+.navbar ul li a{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover{
+  background: crimson;
+  color: white;
+}
+
+.navbar > a{
+  display: none;
+  color: white;
+}
+
+.slider{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.slider .content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .content h1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.slider .content p{
+  text-align: center;
+  width: 300px;
+  color: white;
+  font-size: 15px;
+}
+
+.layout{
+  width: 100%;
+  position: relative;
+}
+
+.layout .wrapper{
+  width: 90%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  top: -5vh;
+  transform: translateX(-50%);
+  background: white;
+}
+
+.layout .wrapper .about{
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.layout .wrapper .about .left{
+  width: 40%;
+}
+
+.layout .wrapper .about .left img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.layout .wrapper .about .right{
+  width: 40%;
+  height: 300px;
+}
+
+.layout .wrapper .about .right h2{
+  font-size: 30px;
+}
+
+.layout .wrapper .about .right p{
+  padding: 10px;
+}
+
+.wcu{
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wcu h2{
+  font-size: 30px;
+}
+
+.wcu .flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wcu .flex-wrap .box{
+  width: 300px;
+  height: 250px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.wcu .flex-wrap .box .ilustration{
+  width: 75px;
+  height: 75px;
+  color: crimson;
+}
+
+.gallery{
+  padding: 50px 0;
+  min-height: 80vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.gallery h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.gallery .image{
+  width: 100%;
+  height: 400px;
+}
+
+.gallery .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .swiper{
+  width: 80%;
+}
+
+.contact{
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px;
+}
+
+.contact h2{
+  font-size: 30px;
+}
+
+.contact .flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact .flex .left{
+  width: 40%;
+  height: 340px;
+}
+
+.contact .flex .left iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact .flex .right{
+  width: 40%;
+  height: 340px;
+}
+
+.contact .flex .right form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact .flex .right form .gap{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .flex .right form .gap label{
+  font-size: 20px;
+}
+
+.contact .flex .right form .gap input{
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact .flex .right form .gap textarea{
+  width: 100%;
+  height: 50px;
+  resize: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact .flex .right form button{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  background: crimson;
+  color: white;
+  margin-top: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 50px;
+  padding: 40px 0;
+  color: white;
+  background: black;
+  gap: 50px;
+}
+
+footer .top{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .top .left{
+  width: 40%;
+}
+
+footer .top .left img{
+  width: 100px;
+}
+
+footer .top .right h2{
+  font-size: 25px;
+}
+
+footer .top .right ul{
+  padding: 10px;
+}
+
+footer .top .right ul li{
+  list-style: none;
+}
+
+footer .top .right ul li a{
+  color: white;
+}
+
+footer .bottom a{
+  color: white;
+}
+
+.floatingchat{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  animation: animate 1s linear infinite;
+}
+
+.floatingchat a{
+  color: white;
+  padding: 10px;
+  background: rgb(47, 198, 47);
+  display: block;
+  border-radius: 10px;
+}
+
+.floatingchat a .icon{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+@keyframes animate{
+  0%{
+    bottom: 25px;
+  }
+  25%{
+    bottom: 30px;
+  }
+  50%{
+    bottom: 35px;
+  }
+  75%{
+    bottom: 30px;
+  }
+  100%{
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 1000px){
+  .layout .wrapper .about{
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .layout .wrapper .about .left{
+    width: 60%;
+  }
+
+  .layout .wrapper .about .right{
+    width: 60%;
+    height: fit-content;
+  }
+
+  .wcu{
+    padding: 50px 0;
+  }
+}
+
+@media(max-width: 812px){
+  .navbar{
+    padding: 10px 30px;
+    transition: all 0.5s;
+  }
+
+  .navbar .title a{
+    font-size: 20px;
+  }
+
+  .navbar.active{
+    background-color: black;
+  }
+
+  .navbar.active .title a{
+    color: white;
+  }
+
+  .navbar > a{
+    display: block;
+  }
+
+  .navbar ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    background: black;
+  }
+
+  .navbar.active ul{
+    display: flex;
+  }
+
+  .navbar ul li{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .navbar ul li:hover{
+    background-color: white;
+  }
+
+  .navbar ul li:hover a{
+    color: black;
+  }
+
+  .navbar ul li a{
+    font-size: 20px;
+    color: white;
+  }
+
+  .contact .flex{
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .contact .flex .left{
+    width: 100%;
+  }
+
+  .contact .flex .right{
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  .layout .wrapper .about .left, .layout .wrapper .about .right{
+    width: 80%;
+  }
+}
+
+@media (max-width: 560px){
+  .slider .content h1{
+    font-size: 30px;
+  }
+  footer .top{
+    flex-direction: column;
+    align-items: self-start;
+    gap: 30px;
+  }
+
+  footer .top .left{
+    width: 80%;
+  }
+
+  footer .top .right{
+    width: 80%;
+  }
+}
