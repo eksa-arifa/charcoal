@@ -25,17 +25,17 @@ const Gallery = () => {
         >
           <SwiperSlide>
             <div className="image">
-                <img src="https://storage.googleapis.com/cdn.vcgamers.com/news/wp-content/uploads/2023/10/Nama-Anime-Couple.jpg" alt="gambar" />
+                <img src="https://images.unsplash.com/photo-1602037348227-c874695ca678?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gambar" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="image">
-                <img src="https://storage.googleapis.com/cdn.vcgamers.com/news/wp-content/uploads/2023/10/Nama-Anime-Couple.jpg" alt="gambar" />
+              <img src="https://images.unsplash.com/photo-1589007716619-42656585dd85?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gambar" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="image">
-                <img src="https://storage.googleapis.com/cdn.vcgamers.com/news/wp-content/uploads/2023/10/Nama-Anime-Couple.jpg" alt="gambar" />
+              <img src="https://images.unsplash.com/photo-1502030818212-8601501607a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gambar" />
             </div>
           </SwiperSlide>
         </Swiper>
